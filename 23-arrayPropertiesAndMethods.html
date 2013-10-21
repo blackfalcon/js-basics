@@ -44,22 +44,46 @@
 
             document.write(allOfficeFurniture + '<br>');
 
-            // The pop method - removes the last element from an array
-            var officeFurnitureLength = officeFurniture.length;
+            // Fun with array methods
+
+            var officeFurnitureLength = officeFurniture.length; // get the array length
+            document.write(officeFurniture.length + '<br>'); // print value to the view
+            var officeFurnitureLastElement = officeFurniture.length - 1; // get length - 1
+            document.write(officeFurniture[officeFurnitureLastElement] + '<br>'); // print last element in the array to the view
+
+            officeFurniture.pop(); // removes the last element in the array
             document.write(officeFurniture.length + '<br>');
             var officeFurnitureLastElement = officeFurniture.length - 1;
             document.write(officeFurniture[officeFurnitureLastElement] + '<br>');
 
-            officeFurniture.pop();
+            officeFurniture.push("whiteboard"); // adds new element to the end of the array
             document.write(officeFurniture.length + '<br>');
             var officeFurnitureLastElement = officeFurniture.length - 1;
             document.write(officeFurniture[officeFurnitureLastElement] + '<br>');
 
-            officeFurniture.push("whiteboard");
-            document.write(officeFurniture.length + '<br>');
-            var officeFurnitureLastElement = officeFurniture.length - 1;
-            document.write(officeFurniture[officeFurnitureLastElement] + '<br>');
+            officeFurniture.reverse(); // reverses the order of the array
+            document.write(officeFurniture + '<br>');
 
+            officeFurniture.sort(); // alphabetical sorting of the array
+            document.write(officeFurniture + '<br>');
+
+
+            // Let's add array elements via an event loop
+            var shoppingList = [];
+            for (i = 0; i < 3; ++i) {
+                shoppingList[i] = prompt('Please enter your list', '');
+            }
+
+            document.write(shoppingList + '<br>');
+
+            // Print array elements
+            var fruit = ['apple', 'orange', 'pineapple', 'cherry', 'kiwi']
+            fruit.sort();
+            var fruitLength = fruit.length;
+
+            for (i = 0; i < fruitLength; ++i) {
+                document.write(fruit[i] + '<br>');
+            }
 
         </script>
 

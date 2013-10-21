@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // Working with math objects
+
+            /*
+                Javascript does math!
+            */
+
+            document.write(Math.PI + '<br>'); // JS KNOWS PI!
+
+            document.write(Math.E + '<br>'); // Euler
+
+            // That's fun, but let's make this interactive
+            var number = prompt('Enter a number', '');
+            var answer = Math.sqrt(number);
+
+            // Let's test to see if this is a number or not and send the correct reply
+            if (isNaN(answer)) {
+                document.write('That is not a number dude!');
+            } else {
+                document.write('The square root of ' + number + ' is ' + answer);
+            };
+
+        </script>
+
+    </body>
+</html>
