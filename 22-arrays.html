@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // Working with Arrays
+
+            /*
+                Syntax to follow - var yourArrayName = [];
+                Anything within the `[]` will become the array
+                Strings go in quotes, other values are simply entered
+
+                Remember to comma delineate each value in the array
+            */
+
+            var names = ["Dale", "Jennifer", "Zoe", "Zenna"];
+            var ages = [40, 40, 7, 3]
+
+            document.write(names[1] + ' ' + ages[1]);
+
+            // Long hand way to write out an array
+            /*
+                You don't want to do this if you are creating a simple list,
+                but this helps to illustrate how an array can be built and have options
+                to add and remove properties.
+
+                This has a downside that you have locked in the number of objects you can
+                add to the array, and that could be bad.
+            */
+
+            var longList = new Array(3);
+            longList[0] = "Star Trek";
+            longList[1] = "Godzilla";
+            longList[2] = "Office Space";
+
+            document.write(longList[2]);
+
+            // Empty array
+            /*
+                A better way to do this is to create an empty array and then as you work through the
+                problem you are trying to solve, add the objects to the array as needed.
+            */
+
+            var emptyList = [];
+
+            emptyList[0] = "Old records";
+            emptyList[1] = "Old shoes";
+            emptyList[2] = "Old people";
+
+            document.write(emptyList[1]);
+
+
+        </script>
+
+    </body>
+</html>

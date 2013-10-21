@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // Working with array properties and methods
+
+            /*
+                Properties: constructor, length and prototype
+            */
+
+            var cars = ["Toyta", "Ford", "Chevy", "Dodge", "Hummer"];
+            var motorcycles = ["Harley-Davidson", "Indian", "BMW", "Buell", "Honda"]
+
+            document.write(cars.length + '<br>'); // using the .length property
+
+            var carsLength = cars.length;
+            document.write(carsLength + '<br>');
+            document.write(cars[carsLength - 1] + '<br>');
+
+
+            /*
+                To concatenate the two arrays, using the first object, use the method of
+                `.concat` and pass in the second object into the parens.
+            */
+            var transportation = cars.concat(motorcycles);
+
+            document.write(transportation.length + '<br>');
+            document.write(transportation[5] + '<br>');
+
+            // See all properties and methods or an array
+            // http://www.w3schools.com/jsref/jsref_obj_array.asp
+
+            // The join method - converts an array to a string
+
+            var officeFurniture = ['chair', 'desk', 'shelf', 'lamp']
+
+            var allOfficeFurniture = officeFurniture.join('; ');
+
+            document.write(allOfficeFurniture + '<br>');
+
+            // The pop method - removes the last element from an array
+            var officeFurnitureLength = officeFurniture.length;
+            document.write(officeFurniture.length + '<br>');
+            var officeFurnitureLastElement = officeFurniture.length - 1;
+            document.write(officeFurniture[officeFurnitureLastElement] + '<br>');
+
+            officeFurniture.pop();
+            document.write(officeFurniture.length + '<br>');
+            var officeFurnitureLastElement = officeFurniture.length - 1;
+            document.write(officeFurniture[officeFurnitureLastElement] + '<br>');
+
+
+        </script>
+
+    </body>
+</html>
