@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <!--
+        Special event handlers that you can only use in the body
+    -->
+
+    <body onLoad="alert('You have downloaded the internet')">
+        <!--
+            Event Handlers - let's make this interactive
+            What's interesting is that this can be placed within the standard HTML
+
+            Within HTML attributes is where you inject the JavaScript
+
+            These are browser native controls - no need for additional programming
+
+            These events do not run automatically
+        -->
+
+        <button onClick="alert('Wow, you clicked me'); alert('This is another box');">This is a button</button>
+
+        <!--
+            Notice the `;` syntax. This allows you to concatenate instructions. While you can do this, it is probably better to make this into a function.
+        -->
+
+        <!--
+            Let's get more crazy with event handlers
+        -->
+
+        <p onMouseOver="alert('Why you in my space?');"> This is the danger area! </p>
+
+        <p onMouseOut="alert('you left my space!')"> This is a vacuum of space</p>
+
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Call a function into another function
+
+            // Create first function to generate a returned value
+            function alpha(a, b) {
+                var c = a + b;
+                return c;
+            }
+
+            // Create second function that simply returns text to the view (could be anything)
+            function bravo() {
+                document.write('This is the bravo statement');
+            }
+
+            // Create the function that will be used, but calls in both previous functions
+            // Notice how the arguments are passed from `theStart` into `alpha`.
+            function theStart(one, two) {
+                document.write(alpha(one, two) + ' ');
+                bravo();
+            }
+
+            // Call the function into the view and pass in the actual arguments to be processed
+            theStart(10, 100);
+        </script>
+
+    </body>
+</html>

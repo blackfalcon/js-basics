@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+        <script type="text/javascript">
+
+            // Adding methods to our objects
+
+            // Constructor function
+            var car = function(make, model, year) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.ageOfCar = carAgeCalc; // no parens
+            }
+
+            // Function (method) to calculate age
+            var carAgeCalc = function() {
+                //var currentDate = new Date().getFullYear();
+                var numYears = 2013 - this.year;
+                return numYears;
+            }
+
+            // Vars that contain the properties of the objects
+            var myCar = new car ("Toyota", "RAV4", 2003);
+            var wifeCar = new car ("Toyota", "Sienna", 2009);
+            var firstCar  = new car ("Ford", "Fiesta", 1988);
+
+        </script>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            document.write("My " + myCar.make + " " + myCar.model + " is " + myCar.ageOfCar() + " years old."); // don't forget parens
+
+        </script>
+
+    </body>
+</html>

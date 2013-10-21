@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Fun with operators
+
+            var simpleMath = 10 / 3;
+            var modMath = 10 % 3;
+
+            // because I hate writing this over and over
+            var lineBreak = '</br>';
+
+            // output the full value
+            document.write(simpleMath + lineBreak);
+
+            // output the remainder or mod
+            document.write(modMath + lineBreak);
+
+            // output the nearest integer
+            document.write(Math.round(simpleMath) + lineBreak);
+
+            // output the rounded up integer
+            document.write(Math.ceil(simpleMath) + lineBreak);
+
+            // output the rounded down integer
+            document.write(Math.floor(simpleMath) + lineBreak);
+
+
+            // Assignment operators
+
+            // This is a basic single operator assignment
+            var houseNumber = 1944;
+            document.write(houseNumber + lineBreak);
+
+            // Assignment operators can also do math
+            var valueOne = 1020;
+            var valueTwo = 10;
+
+            // Redefine a variable using an operator
+            // options are `+=`, `-=`, `*=`, `/=`
+            valueOne -= valueTwo;
+
+            document.write(valueOne + lineBreak);
+        </script>
+
+    </body>
+</html>

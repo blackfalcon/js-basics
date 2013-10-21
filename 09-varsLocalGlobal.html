@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // Local and Global variables
+
+            // Global variable - a var that is created OUTSIDE a function
+            // Local variable - a var created INDIDE a function
+
+            var wife = 'Jennifer'; // This is a global var
+
+            function outPut() {
+                var daughter = 'Zoe'; // this is a local var
+                document.write(wife);
+                document.write(daughter);
+            }
+
+            // Notice in the view how the var of `daughter` does not appear
+            // This is because `daughter` is scoped to `the outPut function
+            outPut();
+            document.write(wife);
+            document.write(daughter);
+        </script>
+
+    </body>
+</html>
