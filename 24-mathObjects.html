@@ -24,10 +24,40 @@
 
             // Let's test to see if this is a number or not and send the correct reply
             if (isNaN(answer)) {
-                document.write('That is not a number dude!');
+                document.write('That is not a number dude!' + '<br>');
             } else {
-                document.write('The square root of ' + number + ' is ' + answer);
+                document.write('The square root of ' + number + ' is ' + answer + '<br>');
             };
+
+            // JavaScript provides eight mathematical constants that can be accessed from the Math object. Mathematical constant = an interesting number.
+
+            // Other things we can do with math are ...
+
+            // Round numbers
+            var roundNumber = Math.round(answer);
+            document.write('Rounded up is ' + roundNumber + '<br>');
+
+            // Max number
+            var topNumber = roundNumber;
+            var bottomNumber = roundNumber / 2;
+            var maxNumber = Math.max(topNumber, bottomNumber);
+
+            document.write('Top number is ' + topNumber + ', low number is ' + bottomNumber + ', so your max number is ' + maxNumber + '<br>');
+
+            // Min number
+            var topNumber = roundNumber;
+            var bottomNumber = roundNumber / 2;
+            var minNumber = Math.min(topNumber, bottomNumber);
+
+            document.write('Top number is ' + topNumber + ', low number is ' + bottomNumber + ', so your min number is ' + minNumber + '<br>');
+
+            // Random numbers
+            var randomNumber = Math.random();
+            var moveDecimal = randomNumber * 100;
+            var randomRoundUp = Math.round(moveDecimal);
+            document.write(randomNumber + '<br>');
+            document.write(moveDecimal + '<br>');
+            document.write('Your random number is ' +  randomRoundUp + '<br>');
 
         </script>
 
