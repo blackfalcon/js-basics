@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    <script type="text/javascript">
+        var checkForm = function() {
+            if (document.myForm.theBox.checked) {
+                alert('You Win!');
+            } else {
+                alert('Oops!');
+            }
+        }
+    </script>
+    </head>
+    <body>
+
+        <!--
+            when creating a form, JS already creates the necessary form object(s)
+            each form in a view is actually listed into an array
+        -->
+        <form name="myForm">
+            <label>username: </label>
+            <input type="text" name="usersName" />
+
+            <label>password: </label>
+            <input type="password"  name="usersPassword" />
+
+            <input type="checkbox" name="theBox"/>
+
+            <input type="button" onClick="checkForm()" type="submit" value="Click me" />
+        </form>
+
+    </body>
+</html>
