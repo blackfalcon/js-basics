@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // Working with date objects
+
+            /*
+                Let's make a JavaScript clock
+            */
+
+            var fullDate = new Date();
+
+            var printTime = function() {
+                var nowTime = new Date();
+                var date = nowTime.getDate();
+                var month = nowTime.getMonth() + 1;  // Because there is not a calendar anywhere that goes from 0 - 11?
+                var fullYear = nowTime.getFullYear();
+                var hours = nowTime.getHours();
+                var minutes = nowTime.getMinutes();
+                var seconds = nowTime.getSeconds() + 1; // Because there is not a clock anywhere that goes from 0 - 59?
+                document.write(month + ' / ' + date + ' / ' + fullYear + '  ' + hours + ' : ' + minutes + ' : ' +  seconds + '<br>');
+            }
+
+            //document.write(fullDate + '<br>');
+            setInterval('printTime()', 1000);
+
+
+        </script>
+
+    </body>
+</html>
