@@ -52,12 +52,8 @@
             document.write('Top number is ' + topNumber + ', low number is ' + bottomNumber + ', so your min number is ' + minNumber + '<br>');
 
             // Random numbers
-            var randomNumber = Math.random();
-            var moveDecimal = randomNumber * 100;
-            var randomRoundUp = Math.round(moveDecimal);
-            document.write(randomNumber + '<br>');
-            document.write(moveDecimal + '<br>');
-            document.write('Your random number is ' +  randomRoundUp + '<br>');
+            var randomNumber = Math.ceil(Math.random() * maxNumber);
+            document.write('Your random number is ' +  randomNumber + '<br>');
 
         </script>
 
