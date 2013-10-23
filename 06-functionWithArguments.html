@@ -11,15 +11,14 @@
 
             // first we need to declare a 'function' and give it a name
             // The `()` are what hold the parameters of the function.
-            function myFunction(myArgument, nextArgument) {
-                // This is called the 'Decloration'
-                document.write('Oh snap! I LOVE ' + myArgument + ' and '  + nextArgument + '</br>'); // Simple alert box with text
-            }
+            var nameFirst=prompt("What's your first name?"," ");
+            var nameLast=prompt("What's your last name?"," ");
+            
+            
+            document.write('Welcome ' + nameFirst + ' '  + nameLast + '</br>'); // Simple alert box with text
+            
 
-            // Call your function and pass in the arguments
-            myFunction('Bacon', 'Cheese'); // calls the function automatically into action
-            myFunction('Star Wars', 'Darth Vader');
-            myFunction('Beer', 'Code');
+        
         </script>
 
     </body>
