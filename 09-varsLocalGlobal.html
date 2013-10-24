@@ -7,24 +7,45 @@
     </head>
     <body>
         <script type="text/javascript">
-            // Local and Global variables
+            // Local and Global variable scopes
 
-            // Global variable - a var that is created OUTSIDE a function
-            // Local variable - a var created INDIDE a function
+            /*
+                Understanding which variables are accessible in any given
+                part of your JS code is critical to avoiding bugs and writing
+                clear code. Here's the basics...
 
-            var wife = 'Jennifer'; // This is a global var
+                Functions act as a way of creating a new scope:
+
+                Global variable - a var that is accessible OUTSIDE all functions
+                Local variable - a var accessible only INSIDE a function
+
+                A local variable will not be accessible in any scope outside
+                of the scope in which it was defined.
+            */
+
+            // This is a global var, accessilbe in every scope:
+            var wife = 'Jennifer';
 
             function outPut() {
-                var daughter = 'Zoe'; // this is a local var
+                // This is a local var, accessible only in this function's scope:
+                var daughter = 'Zoe';
+
+                /*
+                    WATCH OUT: With no "var" keyword, variables are created in the global scope. Always use var.
+                */
+                son = 'Micah' // ANTIPATTERN
+
                 document.write(wife);
                 document.write(daughter);
+                document.write(son);
             }
 
             // Notice in the view how the var of `daughter` does not appear
-            // This is because `daughter` is scoped to `the outPut function
+            // This is because `daughter` is scoped to the outPut function
             outPut();
             document.write(wife);
-            document.write(daughter);
+            document.write(son);
+            document.write(daughter); // This causes an error, script halted.
         </script>
 
     </body>
