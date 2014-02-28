@@ -10,18 +10,22 @@
             // Fun with if/else and comparison operators
 
             var apple = 20;
-            var orange = 20;
+            var orange = '20';
             var space = '</br>';
 
-            // when comparing use `==` is equal to
-            if (apple == orange) {
+            // when comparing use `===` (strict) is equal to
+            // this will also make sure your values are of the same type
+            // Example: a string equals a string or an integer equals an integer
+            // If you used just '==', apple and orange would be equal
+            // Using just '==' you would get true when comparing 0 == ''
+            if (apple === orange) {
                 document.write('Apples are equal to oranges' + space)
             } else {
                 document.write('Apples and oranges, not equal' + space)
             }
 
             // if apple IS NOT EQUAL to orange
-            if (apple != orange) {
+            if (apple !== orange) {
                 document.write('Apples do not equal oranges' + space)
             } else {
                 document.write('Apples and oranges, living happy together' + space)
